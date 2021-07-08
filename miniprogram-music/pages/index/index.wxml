@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图区域开始 -->
+  <swiper indicator-dots autoplay circular indicator-active-color="#ffffff">
+    <swiper-item wx:for="{{swiperList}}" wx:for-item="item"   wx:key="targetId">
+      <image src="{{item.imageUrl}}" ></image>
+    </swiper-item>
+  </swiper>
+  <!-- 轮播图区域结束 -->
+
+  <!-- 导航栏区域开始 -->
+  <view class="nav">
+    <view class="nav_item" wx:for="{{navInfo}}" wx:key="id" wx:for-item="item">
+      <view class="nav_head">
+        <icon class="{{item.icon}} nav_icon"></icon>
+      </view>
+      <view><text>{{item.text}}</text></view>
+    </view>
+  </view>
+  <!-- 导航栏区域结束 -->
+
+  <!-- 推荐歌曲区域开始 -->
+  <view class="gequ"><text>推荐歌曲</text></view>
+  <view class="jinxin">
+    <view><text>为你精心推荐</text></view>
+    <view class="more"><text>查看更多</text></view>
+  </view>
+
+  <view class="gequ_bodys">
+    <scroll-view scroll-x class="gequ_body" enable-flex bindscrolltolower="scroll">
+      <view wx:for="{{songList}}" wx:key="name" wx:for-item="item" class="gequ_list_item">
+        <view class="gequ_img">
+          <image src="{{item.picUrl}}"></image>
+        </view>
+        <view class="gequ_body_text" ><text>{{item.name}}</text></view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 推荐歌曲区域结束 -->
+
+  <!-- 排行榜区域开始 -->
+  <view class="gequ"><text>排行榜</text></view>
+  <view class="jinxin">
+    <view><text>热歌风向标</text></view>
+    <view class="more"><text>查看更多</text></view>
+  </view>
+
+  <view class="gequ_bodys">
+    <scroll-view scroll-x class="gequ_body" enable-flex bindscrolltolower="scroll">
+      <view wx:for="{{topList}}" wx:key="name" wx:for-item="item" class="gequ_list_item">
+        <view class="gequ_img">
+          <image src="{{item.picUrl}}"></image>
+        </view>
+        <view class="gequ_body_text" ><text>{{item.name}}</text></view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 排行榜区域结束 -->
+ 
+  
+  <view class="usermotto">
+    <text>哈哈哈哈哈</text>
+  </view>
+</view>

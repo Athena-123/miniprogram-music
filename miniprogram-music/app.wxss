@@ -1,0 +1,7 @@
+/**app.wxss**/
+@import "./static/iconfont/iconfont.wxss";
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 

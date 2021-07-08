@@ -1,0 +1,83 @@
+/**index.wxss**/
+.container {
+  width: 750rpx;
+}
+.container swiper {
+    width: 100%;
+    height: 375rpx;
+}
+.container swiper image {
+  width: 100%;
+  height: 100%;
+}
+.container .nav {
+  display: flex;
+  margin-top: 20rpx;
+}
+.container .nav_item {
+  width: 150rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.container .nav_head {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  margin: 0 auto;
+  margin-bottom:15rpx;
+  background-color: #f60d10;
+}
+.container .nav_icon {
+  font-size:50rpx;
+  color:#fff;
+}
+.container .gequ {
+  padding-left: 20rpx;
+  margin-top:30rpx;
+  color:#979797;
+  font-size: 22rpx;
+}
+.container .jinxin {
+  display: flex;
+  justify-content: space-between;
+  padding:0 20rpx;
+  margin-top:10rpx;
+  font-size: 30rpx;
+}
+.container .jinxin .more {
+  padding:5rpx 15rpx;
+  border: 1px solid #333;
+  border-radius: 20rpx;
+  font-size:20rpx!important;
+  font-weight: 700;
+}
+.container .gequ_bodys {
+  padding:0 20rpx;
+  margin: 15rpx 0 50rpx;
+}
+.container .gequ_body {
+  display: flex;
+  height: 300rpx;
+  width:750rpx;
+}
+.container .gequ_list_item {
+  width: 200rpx;
+  margin-right:20rpx;
+}
+.container .gequ_img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.container .gequ_img image {
+  width: 100%;
+}
+.container .gequ_body_text {
+  font-size: 24rpx;
+  display: -webkit-box;    
+  -webkit-box-orient: vertical;    
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+}
