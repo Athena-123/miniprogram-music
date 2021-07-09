@@ -1,18 +1,46 @@
 // pages/video/video.js
+import wxp from '../../utils/request'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    tabListInfo:[],    // 导航栏列表
+    type:null,         // 标签列表选择项
   },
 
+  handleType(event){
+    const type = event.currentTarget.dataset.type;
+    this.setData({
+      type: type,
+    });
+  },
+
+  getTabList(){
+    wxp.request({
+      url: '/video/group/list',
+    }).then(({data:res})=>{
+      console.log(res,"list");
+      if(res.code != '200') {
+        wx.showToast({
+          title: '导航栏标签列表数据获取失败！',
+        })
+      } else {
+        this.setData({
+          tabListInfo:res.data,
+          type:res.data[0].id
+        })
+      }
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getTabList()
   },
 
   /**

@@ -1,2 +1,23 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="container">
+  <!-- 头部区域开始 -->
+  <view class="title">
+    <view class="title_left"><image src="/static/images/video/video.jpg"></image></view>
+    <view class="title_text"><text>光辉岁月</text></view>
+    <view class="title_icon"><icon class="iconfont icon-gedan1 video_icon"></icon></view>
+  </view>
+  <!-- 头部区域结束 -->
+
+  <!-- 导航栏标签列表区域开始 -->
+  <view class="tab">
+    <scroll-view class="tab-container" scroll-x enable-flex>
+      <view wx:for="{{tabListInfo}}" wx:key="id" wx:for-item="item">
+        <view class="default {{ type == item.id ? 'active':''}}" bindtap="handleType" data-type="{{item.id}}">
+          <text  class="tab_text">{{item.name}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 导航栏标签列表区域结束 -->
+
+</view>
