@@ -1,0 +1,45 @@
+<!--pages/login.wxml-->
+<view class="container">
+  <view class="inaver _30f2b4d" style="background:{{background}};color:{{getColor}}">
+    <view class="left _30f2b4d" bindtap="goHome">
+      <icon class="iconfont icon-gerenzhuye"></icon>
+      <!-- <image class="icon _30f2b4d" src="/static/images/tabs/home.png"/> -->
+    </view>
+    <view class="center _30f2b4d">
+      <!-- 自定义区域 -->
+      <text>硅谷音乐</text>
+    </view>
+    <view class="right _30f2b4d">
+      <!-- 保护右上角胶囊不被污染 -->
+    </view>
+  </view>
+  <view  class="protect-inaver _30f2b4d">
+    <!-- 占据顶部位置， 伪padding板块 -->
+  </view>
+
+  <view class="comeBack"><text>欢迎回来！</text></view>
+
+  <!-- 手机号、密码开始 -->
+  <view class="login-content">
+    <form bindsubmit="loginBtn">
+      <view class="login-tele"> 
+        <view class="tele">手机号码</view>
+        <input placeholder="请输入手机号码" name="tel" value="{{form.telephone}}"/>
+      </view>
+      <view class="login-password">
+        <view class="password">密码</view>
+        <input placeholder="请输入密码" name="pwd" value="{{form.password}}" type="password"/>
+      </view>
+      <view class="login-btn">
+        <button formType="submit">登录</button>
+      </view>
+    </form>
+  </view>
+  <!-- 手机号、密码结束 -->
+
+  <view class="login-un">忘记密码？</view>
+
+  <!-- <view>
+    <view>还没有账号？<navigator >马上注册</navigator></view>
+  </view> -->
+</view>

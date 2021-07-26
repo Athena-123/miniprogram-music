@@ -17,6 +17,9 @@
         </view>
       </view>
     </scroll-view>
+    <view class="video-content">
+
+    </view>
   </view>
   <!-- 导航栏标签列表区域结束 -->
 

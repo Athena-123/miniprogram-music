@@ -45,7 +45,7 @@
 .container .tab-container .default {
   /* margin-right: 25rpx; */
   padding: 5rpx 15rpx;
-  min-width: 140rpx;
+  min-width: 160rpx;
   text-align: center;
 }
 .container .active {

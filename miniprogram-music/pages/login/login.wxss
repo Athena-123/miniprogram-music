@@ -1,0 +1,90 @@
+/* pages/login.wxss */
+.container .comeBack {
+  font-size: 50rpx;
+  font-weight: 700;
+  padding: 50rpx;
+}
+.container .login-tele, 
+.container .login-password {
+  margin: 50rpx;
+  padding: 20rpx;
+  color:#757673;
+  width: 620rpx;
+  height: 100rpx;
+  background-color: #f7f6fb;
+}
+.container .tele,
+.container .password {
+  /* line-height: 60rpx; */
+  margin-bottom: 20rpx;
+}
+.container .login-btn {
+  /* margin: 50rpx; */
+}
+.container .login-btn button {
+  width:660rpx;
+  margin:40rpx auto;
+  background-color: #ce3d33;
+  color:#fff;
+  border-radius: 50rpx;
+}
+.container .login-un {
+  color:#42a5f5;
+  text-align: center;
+}
+.inaver._30f2b4d {
+  box-sizing: border-box;
+  padding-top: 44rpx;
+  width: 100vw;
+  height: 130rpx;
+  display: flex;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+}
+ 
+.inaver .left._30f2b4d {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 8rpx;
+}
+ 
+.inaver .left._30f2b4d {
+  position: relative;
+  width: 65rpx;
+  height: 65rpx;
+  /* padding: 10rpx; */
+  border-radius: 30rpx;
+  margin: 15rpx;
+  background-color:rgba(255, 255, 255, 0.2);
+}
+.inaver .left .icon-gerenzhuye {
+  position: absolute;
+  color:#fff;
+  margin-top: 50%;
+  margin-left: 50%;
+  top:-32rpx;
+  left: -15rpx;
+}
+ 
+.inaver .center._30f2b4d {
+  flex: 1;
+  margin: 18rpx;
+  color: #fff;
+  text-align: center;
+  font-size:28rpx;
+  margin-left: 150rpx;
+}
+ 
+.inaver .right._30f2b4d {
+  width: 240rpx;
+  height: 100rpx;
+}
+ 
+.protect-inaver._30f2b4d {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 160rpx;
+  background-color: #fff;
+}
